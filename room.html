@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="hotel.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Hotel Booker</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#rooms">Rooms</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero bg-info text-white text-center py-5">
+        <h1>🙏Welcome to Harsh Hotel🙏</h1>
+        <p>Experience the comfort of luxury stays</p>
+        <a href="#rooms" class="btn btn-light btn-lg">Book a Room</a>
+    </header>
+
+    <section id="rooms" class="container py-5">
+        <h2 class="text-center mb-4">Our Rooms🧿</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="ima.jpg" class="card-img-top" alt="Room 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Deluxe Room</h5>
+                        <p class="card-text">A luxurious room with all the modern amenities.❤️</p>
+                        <p class="price">$200 per night</p>
+                        <a href="#booking-form" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="ima2.jpg" class="card-img-top" alt="Room 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Standard Room</h5>
+                        <p class="card-text">Comfortable and affordable room for a pleasant stay.💜</p>
+                        <p class="price">$120 per night</p>
+                        <a href="#booking-form" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="ima3.webp" class="card-img-top" alt="Room 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Suite Room</h5>
+                        <p class="card-text">A spacious suite for those who need extra comfort.💕</p>
+                        <p class="price">$350 per night</p>
+                        <a href="#booking-form" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking-form" class="container py-5">
+        <h2 class="text-center mb-4">Book Your Room🏣</h2>
+        <form action="#" method="post">
+            <div class="form-row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="check-in">🗓️Check-In Date</label>
+                        <input type="date" class="form-control" id="check-in" required>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="check-out">📅Check-Out Date</label>
+                        <input type="date" class="form-control" id="check-out" required>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Submit Booking</button>
+        </form>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-dark text-white text-center py-5">
+        <h3>Contact Us☎️</h3>
+        <p>For any inquiries, please reach out to us.</p>
+        <p>✉️Email: contact@hotelbooker.com</p>
+        <p>Phone:📞 +123 456 7890</p>
+    </section>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Hotel Booker. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
